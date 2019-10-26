@@ -1,0 +1,19 @@
+{
+  "name": "djhunn39.github.io",
+  "version": "1.0.0",
+  "description": "My GitHub page",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DJHunn39/djhunn39.github.io.git"
+  },
+  "author": "DJHunn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DJHunn39/djhunn39.github.io/issues"
+  },
+  "homepage": "https://github.com/DJHunn39/djhunn39.github.io/index.html"
+}
