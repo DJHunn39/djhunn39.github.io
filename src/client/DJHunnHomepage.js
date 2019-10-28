@@ -10,7 +10,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
-import DJHunn39Logo from '../../assets/DJHunn39SigRedTransparent0.png';
+import DJHunn39Logo from '../assets/DJHunn39SigRedTransparent0.png';
 import theme from './styles/theme';
 import Home from './components/Home';
 import GiftList from './components/GiftList';

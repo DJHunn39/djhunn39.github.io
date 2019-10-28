@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
-import DJHunnHomepage from './src/client/DJHunnHomepage';
+import DJHunnHomepage from './client/DJHunnHomepage';
 
 const container = document.querySelector('#djhunn39-homepage');
 
