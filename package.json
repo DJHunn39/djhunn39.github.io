@@ -4,6 +4,8 @@
   "description": "My GitHub page",
   "main": "index.js",
   "scripts": {
+    "predeploy": "parcel build index.html",
+    "deploy": "gh-pages -d dist",
     "start": "parcel index.html",
     "test": "test"
   },
@@ -23,5 +25,9 @@
     "react-dom": "16.11.0",
     "react-router": "^5.1.2",
     "react-router-dom": "^5.1.2"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "gh-pages": "^2.1.1"
   }
 }
