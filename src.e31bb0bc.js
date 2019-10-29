@@ -45933,43 +45933,85 @@ var actualGiftList = [{
   type: 'Stocking filler',
   purchaseHref: 'https://www.lego.com/en-gb/product/series-19-71025',
   imgSrc: 'https://i.ebayimg.com/images/g/WG8AAOSw5PRdb49l/s-l300.png',
-  price: '£2.99'
+  price: '£2.99',
+  notes: ''
 }, {
   name: 'The Legend of Zelda: Breath of the Wild',
   type: 'Game',
   purchaseHref: 'https://www.amazon.co.uk/Legend-Zelda-Breath-Nintendo-Switch/dp/B01N1083WZ/ref=asc_df_B01N1083WZ/?tag=googshopuk-21&linkCode=df0&hvadid=310694401667&hvpos=1o1&hvnetw=g&hvrand=11210629286154802326&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9044990&hvtargid=pla-564457057881&psc=1&th=1&psc=1',
   imgSrc: 'https://storemedia.nintendo.com/ui/images/devices/switch/software/switch-legendofzelda-breathofthewild-640x480.png',
-  price: '£47.99'
+  price: '£47.99',
+  notes: 'Platform: Nintendo Switch'
 }, {
   name: 'The Outer Worlds',
   type: 'Game',
   purchaseHref: 'https://www.game.co.uk/en/the-outer-worlds-2623343?cm_mmc=Google+Shopping-_-Mint+Software-_-Mint+Software-_-+-+&gclid=Cj0KCQjwgNXtBRC6ARIsAIPP7Ru8M41ahDqqJ3q4imHpcPW3Ju57aWZx6wx5jt_14ZPiqGxaixzl2u8aAvxLEALw_wcB',
   imgSrc: 'https://images-na.ssl-images-amazon.com/images/I/81KZCh0hG5L._AC_SX215_.jpg',
-  price: '£49.99'
+  price: '£49.99',
+  notes: 'Platform: PS4'
 }, {
   name: 'Arsenal 2019/20 Home Shirt',
   type: 'Sport',
   purchaseHref: 'https://www.sportsdirect.com/adidas-arsenal-home-shirt-2019-2020-377220?gclid=Cj0KCQjwgNXtBRC6ARIsAIPP7RvpmEH77kUknno2JGwe-HOc-tqxuMcR4wti7Eop04o7xYFmWfTI6Q0aAuR4EALw_wcB#colcode=37722008',
   imgSrc: 'https://cdn11.bigcommerce.com/s-6rh1yreabm/images/stencil/1280x1280/products/857/2096/arsneal_home__06911.1561975052.png?c=2&imbypass=on',
-  price: '£54.99'
+  price: '£54.99',
+  notes: 'Size: M'
 }, {
   name: 'Arsenal 2019/20 Away Shirt',
   type: 'Sport',
   purchaseHref: 'https://www.sportsdirect.com/adidas-arsenal-away-shirt-2019-2020-377233?gclid=Cj0KCQjwgNXtBRC6ARIsAIPP7RsAt13MbH3-52wl1vtRCR0s4kKqZYCa04eZeclODeQYFgNxfdJCFNYaAsavEALw_wcB#colcode=37723313',
   imgSrc: 'https://cdn11.bigcommerce.com/s-3yufq/images/stencil/1280x1280/products/1017/2883/arsenal_away_adult_png__98732.1564477685.png?c=2&imbypass=on',
-  price: '£54.99'
+  price: '£54.99',
+  notes: 'Size: M'
+}, {
+  name: 'Fine Stripe Polo Shirt',
+  type: 'Clothing',
+  purchaseHref: 'https://www.lyleandscott.com/uk/fine-stripe-polo-shirt-SP1116V572.html?dwvar_SP1116V572_color=572&cgid=mens-polo-shirts#start=43',
+  imgSrc: 'https://www.lyleandscott.com/dw/image/v2/BBKP_PRD/on/demandware.static/-/Sites-apparel-catalog/default/dw6cacd969/images/large/SP1116V_572_1.jpg?sw=600&sh=750&sm=cut',
+  price: '£55.00',
+  notes: 'Size: M - Lyle & Scott generally make good stuff, but with clothes this is more to give an idea of what I like'
+}, {
+  name: 'Geo Print Polo Shirt',
+  type: 'Clothing',
+  purchaseHref: 'https://www.lyleandscott.com/uk/geo-print-polo-shirt-SP1111VZ704.html?dwvar_SP1111VZ704_color=Z704&cgid=mens-polo-shirts#sz=44&idx=42&start=72',
+  imgSrc: 'https://www.lyleandscott.com/dw/image/v2/BBKP_PRD/on/demandware.static/-/Sites-apparel-catalog/default/dw87541315/images/large/SP1111V_Z704_1.jpg?sw=1200&sh=1600&sm=fit',
+  price: '£55.00',
+  notes: 'Size: M - Lyle & Scott generally make good stuff, but with clothes this is more to give an idea of what I like'
+}, {
+  name: 'Death Stranding',
+  type: 'Game',
+  purchaseHref: 'https://www.argos.co.uk/product/5722486',
+  imgSrc: 'https://media.4rgos.it/i/Argos/5722486_R_Z001A?w=750&h=440&qlt=70',
+  price: '£49.99',
+  notes: 'Platform: PS4 \nRelease Date: Nov 8th'
+}, {
+  name: 'Official DualShock 4 Charging Station for PS4 Controller',
+  type: 'Game',
+  purchaseHref: 'https://www.argos.co.uk/product/4399023',
+  imgSrc: 'https://media.4rgos.it/i/Argos/4399023_R_Z001A?w=750&h=440&qlt=70',
+  price: '£12.99',
+  notes: ''
 }, {
   name: '',
   type: '',
   purchaseHref: '',
   imgSrc: '',
-  price: ''
+  price: '',
+  notes: ''
 }, {
   name: '',
   type: '',
   purchaseHref: '',
   imgSrc: '',
-  price: ''
+  price: '',
+  notes: ''
+}, {
+  name: '',
+  type: '',
+  purchaseHref: '',
+  imgSrc: '',
+  price: '',
+  notes: ''
 }];
 exports.actualGiftList = actualGiftList;
 },{}],"client/components/GiftList/GiftList.js":[function(require,module,exports) {
@@ -46005,7 +46047,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var useStyles = (0, _styles.makeStyles)(function (theme) {
   return {
     link: {
-      margin: theme.spacing(1)
+      color: 'inherit'
     },
     icon: {
       marginRight: theme.spacing(2)
@@ -46031,9 +46073,6 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
 
 var GiftList = function GiftList() {
   var theme = (0, _styles.useTheme)();
-  console.log('\n');
-  console.log(theme);
-  console.log('\n');
   var classes = useStyles(theme);
   return _react.default.createElement("main", null, _react.default.createElement(_Container.default, {
     className: classes.cardGrid,
@@ -46042,32 +46081,38 @@ var GiftList = function GiftList() {
     container: true,
     spacing: 4
   }, _actualGiftList.actualGiftList.map(function (gift, index) {
-    return _react.default.createElement(_Grid.default, {
-      item: true,
-      key: index,
-      xs: 12,
-      sm: 6,
-      md: 4
-    }, _react.default.createElement(_Card.default, {
-      className: classes.card
-    }, _react.default.createElement(_CardMedia.default, {
-      className: classes.cardMedia,
-      image: gift.imgSrc,
-      title: gift.name
-    }), _react.default.createElement(_CardContent.default, {
-      className: classes.cardContent
-    }, _react.default.createElement(_Typography.default, {
-      variant: "h5",
-      component: "h2"
-    }, _react.default.createElement(_Link.default, {
-      href: gift.purchaseHref,
-      className: classes.link
-    }, gift.name)), _react.default.createElement(_Typography.default, {
-      variant: "h6",
-      component: "h3"
-    }, gift.type), _react.default.createElement(_Typography.default, {
-      variant: "body1"
-    }, gift.price))));
+    if (gift.name !== '') {
+      return _react.default.createElement(_Grid.default, {
+        item: true,
+        key: index,
+        xs: 12,
+        sm: 6,
+        md: 4
+      }, _react.default.createElement(_Card.default, {
+        className: classes.card
+      }, _react.default.createElement(_CardMedia.default, {
+        className: classes.cardMedia,
+        image: gift.imgSrc,
+        title: gift.name
+      }), _react.default.createElement(_CardContent.default, {
+        className: classes.cardContent
+      }, _react.default.createElement(_Typography.default, {
+        color: "secondary",
+        align: "left",
+        variant: "h5",
+        component: "h2"
+      }, _react.default.createElement(_Link.default, {
+        href: gift.purchaseHref,
+        className: classes.link
+      }, gift.name)), _react.default.createElement(_Typography.default, {
+        variant: "h6",
+        component: "h3"
+      }, gift.type), _react.default.createElement(_Typography.default, {
+        variant: "body1"
+      }, gift.price), _react.default.createElement(_Typography.default, {
+        variant: "body2"
+      }, gift.notes))));
+    }
   }))));
 };
 
@@ -46172,7 +46217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57937" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56923" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
