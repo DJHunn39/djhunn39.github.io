@@ -44798,8 +44798,8 @@ var DJHunnHomepage = function DJHunnHomepage() {
     width: 150
   }))), _react.default.createElement(_Container.default, {
     maxWidth: "lg"
-  }, _react.default.createElement(_reactRouterDom.BrowserRouter, {
-    basename: undefined
+  }, _react.default.createElement(_reactRouterDom.HashRouter, {
+    basename: "/"
   }, _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
     exact: true,
     path: "/"
@@ -44852,7 +44852,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49321" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49509" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
