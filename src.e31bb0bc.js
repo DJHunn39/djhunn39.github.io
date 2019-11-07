@@ -45986,10 +45986,80 @@ var actualGiftList = [{
   notes: 'Platform: PS4 \nRelease Date: Nov 8th'
 }, {
   name: 'Official DualShock 4 Charging Station for PS4 Controller',
-  type: 'Game',
+  type: 'Random',
   purchaseHref: 'https://www.argos.co.uk/product/4399023',
   imgSrc: 'https://media.4rgos.it/i/Argos/4399023_R_Z001A?w=750&h=440&qlt=70',
   price: '£12.99',
+  notes: ''
+}, {
+  name: 'LEGO Brick Pencil Case',
+  type: 'Random',
+  purchaseHref: 'https://www.lego.com/en-gb/product/lego-brick-pencil-case-red-5005110',
+  imgSrc: 'https://sh-s7-live-s.legocdn.com/is/image/LEGO/5005110?wid=1500&hei=1500&fit=constrain,1&op_sharpen=0&resMode=sharp2&op_usm=1,1,6,0&iccEmbed=0&printRes=72',
+  price: '£9.99',
+  notes: ''
+}, {
+  name: 'The Manor | Sat 21 Mar 2020 @ 7:00 pm | O2 Academy Brixton, London',
+  type: 'Random',
+  purchaseHref: 'https://www.ticketmaster.co.uk/the-manor-london-21-03-2020/event/1F00573EBC9E671B',
+  imgSrc: 'https://c.ststat.net/content/EntImg/Tour/the-manor-1654368446-300x300.jpg',
+  price: '£29.65 each',
+  notes: 'CIRCLE UNRESERVED SEATS / REAR STANDING only - I think it might be too lairy in the stalls for this one.\nProbably not worth it if there\'s just one ticket, not sure who to bring atm though.'
+}, {
+  name: 'amiibo Chrom',
+  type: 'Random',
+  purchaseHref: 'https://www.amazon.co.uk/Nintendo-10002198-amiibo-Chrom-Switch/dp/B07TD3X2GK?pf_rd_p=61f6fb90-34b3-4002-b602-117985d72603&pd_rd_wg=Qobbo&pf_rd_r=JKJKYE24G1BDANNCYM9Q&ref_=pd_gw_newr&pd_rd_w=qkPEk&pd_rd_r=e47b5392-8146-4946-8b8e-f4d81834b33f',
+  imgSrc: 'https://i.ebayimg.com/images/g/u9UAAOSwijhdEYqp/s-l400.jpg',
+  price: '£14.99',
+  notes: 'Release Date: Nov 15th'
+}, {
+  name: 'SACKBOY pattern t-shirt',
+  type: 'Clothing',
+  purchaseHref: 'https://www.insertcoinclothing.com/tees/sackboy-pattern.html?store=littlebigplanet',
+  imgSrc: 'https://www.insertcoinclothing.com/media/images/products/scale610x1002/924_1.jpg?c=1554459092',
+  price: '£22.99',
+  notes: 'Size: M'
+}, {
+  name: 'WipEout Ship Manufacturers Graphic T-Shirt',
+  type: 'Clothing',
+  purchaseHref: 'https://www.redbubble.com/people/ioncannon/works/28213627-wipeout-ship-manufacturers?p=mens-graphic-t-shirt&rbs=716577e9-eb31-4f08-accd-1e7f2d01e427&ref=available_products_swiper',
+  imgSrc: 'https://ih1.redbubble.net/image.435451264.3627/gpt,mens,750x1000,black,large-pad,750x1000,f8f8f8.jpg',
+  price: '£22.33',
+  notes: 'Size: M - only interested in the graphic t-shirt design'
+}, {
+  name: 'Ideas Dinosaur Fossils',
+  type: 'LEGO',
+  purchaseHref: 'https://www.lego.com/en-gb/product/dinosaur-fossils-21320?icmp=HP-SHCC-EX-ID-projec-1181',
+  imgSrc: 'https://sh-s7-live-s.legocdn.com/is/image/LEGO/21320?wid=1500&hei=1500&fit=constrain,1&op_sharpen=0&resMode=sharp2&op_usm=1,1,6,0&iccEmbed=0&printRes=72',
+  price: '£54.99',
+  notes: ''
+}, {
+  name: 'ALL-OVER PRINT POLO SHIRT (Fudge)',
+  type: 'Clothing',
+  purchaseHref: 'https://www.jackjones.com/gb/en/jj/clothing/t-shirts/polo-shirts/all-over-print-polo-shirt-12154548.html?cgid=jj-tshirts-polo&dwvar_colorPattern=12154548_Fudge_689664',
+  imgSrc: 'https://www.jackjones.com/dw/image/v2/ABBT_PRD/on/demandware.static/-/Sites-pim-catalog/default/dw82355fc7/pim-static/large/12154548_Fudge_689664_008_ProductLarge.jpg?sw=685',
+  price: '£15.40',
+  notes: 'Size: M'
+}, {
+  name: 'Lindor Milk & White Truffles',
+  type: 'Chocolate',
+  purchaseHref: 'https://www.lindt.co.uk/shop/our-brands/lindor/lindor-milk-white-truffles-200g',
+  imgSrc: 'https://www.lindt.co.uk/shop/media/catalog/product/cache/1/thumbnail/405x400/9df78eab33525d08d6e5fb8d27136e95/8/0/8003340095899_t1.png',
+  price: '£4.99 (for this size)',
+  notes: 'Not really the normal sort of gift, just saying these are amazing'
+}, {
+  name: '',
+  type: '',
+  purchaseHref: '',
+  imgSrc: '',
+  price: '',
+  notes: ''
+}, {
+  name: '',
+  type: '',
+  purchaseHref: '',
+  imgSrc: '',
+  price: '',
   notes: ''
 }, {
   name: '',
@@ -46217,7 +46287,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56923" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50493" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
