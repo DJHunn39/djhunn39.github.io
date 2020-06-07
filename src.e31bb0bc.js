@@ -56961,12 +56961,12 @@ Object.defineProperty(exports, "__esModule", {
 exports.updateBall = void 0;
 
 var updateBall = function updateBall(gameState, canvas, ctx, x, y, dx, dy, paddleHeight, paddleWidth, paddleX) {
-  var radius = 10; //Check if hitting the top, the paddle, or the bottom
+  var radius = 5; //Check if hitting the top, the paddle, or the bottom
 
   if (y.current + dy.current < radius) {
     dy.current = -dy.current;
   } else if (y.current + dy.current > canvas.height - (paddleHeight + radius) && x.current > paddleX.current && x.current < paddleX.current + paddleWidth) {
-    dy.current = -(dy.current * 1.2);
+    dy.current = -(dy.current * 1.1);
   } else if (y.current + dy.current > canvas.height - radius) {
     gameState.current = 'over';
   } //Check if hitting the sides
@@ -56980,7 +56980,7 @@ var updateBall = function updateBall(gameState, canvas, ctx, x, y, dx, dy, paddl
 
   ctx.beginPath();
   ctx.arc(x.current, y.current, radius, 0, Math.PI * 2);
-  ctx.fillStyle = "#0095DD";
+  ctx.fillStyle = "#ff0000";
   ctx.fill();
   ctx.closePath();
   y.current += dy.current;
@@ -57016,7 +57016,7 @@ var updatePaddle = function updatePaddle(canvas, ctx, paddleX, paddleHeight, pad
 
   ctx.beginPath();
   ctx.rect(paddleX.current, canvas.height - paddleHeight, paddleWidth, paddleHeight);
-  ctx.fillStyle = "#0095DD";
+  ctx.fillStyle = "#000000";
   ctx.fill();
   ctx.closePath();
 };
@@ -57033,15 +57033,17 @@ exports.drawBricks = void 0;
 var drawBricks = function drawBricks(ctx, bricks, brickColumnCount, brickRowCount, brickWidth, brickHeight, brickPadding, brickOffsetLeft, brickOffsetTop) {
   for (var c = 0; c < brickColumnCount; c++) {
     for (var r = 0; r < brickRowCount; r++) {
-      var brickX = c * (brickWidth + brickPadding) + brickOffsetLeft;
-      var brickY = r * (brickHeight + brickPadding) + brickOffsetTop;
-      bricks[c][r].x = brickX;
-      bricks[c][r].y = brickY;
-      ctx.beginPath();
-      ctx.rect(brickX, brickY, brickWidth, brickHeight);
-      ctx.fillStyle = "#0095DD";
-      ctx.fill();
-      ctx.closePath();
+      if (!bricks[c][r].broken) {
+        var brickX = c * (brickWidth + brickPadding) + brickOffsetLeft;
+        var brickY = r * (brickHeight + brickPadding) + brickOffsetTop;
+        bricks[c][r].x = brickX;
+        bricks[c][r].y = brickY;
+        ctx.beginPath();
+        ctx.rect(brickX, brickY, brickWidth, brickHeight);
+        ctx.fillStyle = "#ff0000";
+        ctx.fill();
+        ctx.closePath();
+      }
     }
   }
 };
@@ -57076,7 +57078,7 @@ var _constants = _interopRequireDefault(require("../constants"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var resetGame = function resetGame(x, y, dx, dy, paddleX, paddleWidth, ctx, canvas, gameState, controls) {
+var resetGame = function resetGame(bricks, brickColumnCount, brickRowCount, x, y, dx, dy, paddleX, paddleWidth, ctx, canvas, gameState, controls) {
   var startingVertAccel = _constants.default.startingVertAccel,
       startingHorizAccel = _constants.default.startingHorizAccel;
 
@@ -57084,6 +57086,19 @@ var resetGame = function resetGame(x, y, dx, dy, paddleX, paddleWidth, ctx, canv
       newX = _resetBall.newX,
       newY = _resetBall.newY;
 
+  for (var c = 0; c < brickColumnCount; c++) {
+    bricks[c] = [];
+
+    for (var r = 0; r < brickRowCount; r++) {
+      bricks[c][r] = {
+        x: 0,
+        y: 0,
+        broken: false
+      };
+    }
+  }
+
+  ;
   x.current = newX;
   y.current = newY;
   dx.current = startingHorizAccel;
@@ -57127,7 +57142,29 @@ var drawMenu = function drawMenu(gameState, controls, ctx, canvas) {
 };
 
 exports.drawMenu = drawMenu;
-},{"../resetBall":"client/components/Playground/resetBall.js"}],"client/components/Playground/processFrame/processFrame.js":[function(require,module,exports) {
+},{"../resetBall":"client/components/Playground/resetBall.js"}],"client/components/Playground/processFrame/collisionDetection.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.collisionDetection = void 0;
+
+var collisionDetection = function collisionDetection(bricks, brickWidth, brickHeight, x, y, dy) {
+  bricks.forEach(function (brickRow) {
+    brickRow.forEach(function (brick) {
+      if (!brick.broken) {
+        if (x.current > brick.x && x.current < brick.x + brickWidth && y.current > brick.y && y.current < brick.y + brickHeight) {
+          dy.current = -dy.current;
+          brick.broken = !brick.broken;
+        }
+      }
+    });
+  });
+};
+
+exports.collisionDetection = collisionDetection;
+},{}],"client/components/Playground/processFrame/processFrame.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -57145,6 +57182,8 @@ var _resetGame = require("./resetGame");
 
 var _drawMenu = require("./drawMenu");
 
+var _collisionDetection = require("./collisionDetection");
+
 var processFrame = function processFrame(gameState, deltaTime, canvas, ctx, x, y, dx, dy, paddleX, paddleHeight, paddleWidth, controls, bricks, brickColumnCount, brickRowCount, brickWidth, brickHeight, brickPadding, brickOffsetLeft, brickOffsetTop) {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -57156,11 +57195,12 @@ var processFrame = function processFrame(gameState, deltaTime, canvas, ctx, x, y
     case 'inProgress':
       (0, _updateBall.updateBall)(gameState, canvas, ctx, x, y, dx, dy, paddleHeight, paddleWidth, paddleX);
       (0, _updatePaddle.updatePaddle)(canvas, ctx, paddleX, paddleHeight, paddleWidth, controls);
+      (0, _collisionDetection.collisionDetection)(bricks, brickWidth, brickHeight, x, y, dy);
       (0, _drawBricks.drawBricks)(ctx, bricks, brickColumnCount, brickRowCount, brickWidth, brickHeight, brickPadding, brickOffsetLeft, brickOffsetTop);
       break;
 
     case 'over':
-      (0, _resetGame.resetGame)(x, y, dx, dy, paddleX, paddleWidth, ctx, canvas, gameState, controls);
+      (0, _resetGame.resetGame)(bricks, brickColumnCount, brickRowCount, x, y, dx, dy, paddleX, paddleWidth, ctx, canvas, gameState, controls);
       break;
 
     default:
@@ -57172,7 +57212,7 @@ var processFrame = function processFrame(gameState, deltaTime, canvas, ctx, x, y
 };
 
 exports.processFrame = processFrame;
-},{"./updateBall":"client/components/Playground/processFrame/updateBall.js","./updatePaddle":"client/components/Playground/processFrame/updatePaddle.js","./drawBricks":"client/components/Playground/processFrame/drawBricks.js","./resetGame":"client/components/Playground/processFrame/resetGame.js","./drawMenu":"client/components/Playground/processFrame/drawMenu.js"}],"client/components/Playground/Playground.js":[function(require,module,exports) {
+},{"./updateBall":"client/components/Playground/processFrame/updateBall.js","./updatePaddle":"client/components/Playground/processFrame/updatePaddle.js","./drawBricks":"client/components/Playground/processFrame/drawBricks.js","./resetGame":"client/components/Playground/processFrame/resetGame.js","./drawMenu":"client/components/Playground/processFrame/drawMenu.js","./collisionDetection":"client/components/Playground/processFrame/collisionDetection.js"}],"client/components/Playground/Playground.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -57236,12 +57276,12 @@ var useCanvasOnAnimationFrame = function useCanvasOnAnimationFrame(canvasRef, ca
   var paddleWidth = 75;
   var paddleX = (0, _react.useRef)((canvasWidth - paddleWidth) / 2);
   var brickRowCount = 3;
-  var brickColumnCount = 5;
-  var brickWidth = 75;
-  var brickHeight = 20;
-  var brickPadding = 10;
+  var brickColumnCount = 8;
+  var brickWidth = 50;
+  var brickHeight = 15;
+  var brickPadding = 5;
   var brickOffsetTop = 30;
-  var brickOffsetLeft = 30;
+  var brickOffsetLeft = 20;
   var bricks = [];
 
   for (var c = 0; c < brickColumnCount; c++) {
@@ -57250,7 +57290,8 @@ var useCanvasOnAnimationFrame = function useCanvasOnAnimationFrame(canvasRef, ca
     for (var r = 0; r < brickRowCount; r++) {
       bricks[c][r] = {
         x: 0,
-        y: 0
+        y: 0,
+        broken: false
       };
     }
   }
@@ -57314,6 +57355,20 @@ var useCanvasOnAnimationFrame = function useCanvasOnAnimationFrame(canvasRef, ca
     document.addEventListener("keyup", keyUpHandler, false);
     canvas = canvasRef.current;
     ctx = canvas.getContext('2d');
+
+    for (var _c = 0; _c < brickColumnCount; _c++) {
+      bricks[_c] = [];
+
+      for (var _r = 0; _r < brickRowCount; _r++) {
+        bricks[_c][_r] = {
+          x: 0,
+          y: 0,
+          broken: false
+        };
+      }
+    }
+
+    ;
 
     var _resetBall = (0, _resetBall2.resetBall)(canvas.width, canvas.height),
         newX = _resetBall.newX,
@@ -59015,7 +59070,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49279" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53128" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
