@@ -56960,7 +56960,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.updateBall = void 0;
 
-var updateBall = function updateBall(gameOver, canvas, ctx, x, y, dx, dy, paddleHeight, paddleWidth, paddleX) {
+var updateBall = function updateBall(gameState, canvas, ctx, x, y, dx, dy, paddleHeight, paddleWidth, paddleX) {
   var radius = 10; //Check if hitting the top, the paddle, or the bottom
 
   if (y.current + dy.current < radius) {
@@ -56968,7 +56968,7 @@ var updateBall = function updateBall(gameOver, canvas, ctx, x, y, dx, dy, paddle
   } else if (y.current + dy.current > canvas.height - (paddleHeight + radius) && x.current > paddleX.current && x.current < paddleX.current + paddleWidth) {
     dy.current = -(dy.current * 1.2);
   } else if (y.current + dy.current > canvas.height - radius) {
-    gameOver.current = true;
+    gameState.current = 'over';
   } //Check if hitting the sides
 
 
@@ -56996,7 +56996,10 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.updatePaddle = void 0;
 
-var updatePaddle = function updatePaddle(canvas, ctx, paddleX, paddleHeight, paddleWidth, rightPressed, leftPressed) {
+var updatePaddle = function updatePaddle(canvas, ctx, paddleX, paddleHeight, paddleWidth, controls) {
+  var leftPressed = controls.leftPressed,
+      rightPressed = controls.rightPressed;
+
   if (rightPressed) {
     paddleX.current += 7;
 
@@ -57044,6 +57047,21 @@ var drawBricks = function drawBricks(ctx, bricks, brickColumnCount, brickRowCoun
 };
 
 exports.drawBricks = drawBricks;
+},{}],"client/components/Playground/constants.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var playgroundConstants = {
+  canvasWidth: 480,
+  canvasHeight: 320,
+  startingVertAccel: 2,
+  startingHorizAccel: 1
+};
+var _default = playgroundConstants;
+exports.default = _default;
 },{}],"client/components/Playground/processFrame/resetGame.js":[function(require,module,exports) {
 "use strict";
 
@@ -57054,29 +57072,61 @@ exports.resetGame = void 0;
 
 var _resetBall2 = require("../resetBall");
 
-var resetGame = function resetGame(x, y, dx, dy, paddleX, paddleWidth, ctx, canvas, gameOver, enterPressed) {
+var _constants = _interopRequireDefault(require("../constants"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var resetGame = function resetGame(x, y, dx, dy, paddleX, paddleWidth, ctx, canvas, gameState, controls) {
+  var startingVertAccel = _constants.default.startingVertAccel,
+      startingHorizAccel = _constants.default.startingHorizAccel;
+
   var _resetBall = (0, _resetBall2.resetBall)(canvas.width, canvas.height),
       newX = _resetBall.newX,
       newY = _resetBall.newY;
 
   x.current = newX;
   y.current = newY;
-  dx.current = 1;
-  dy.current = 1;
+  dx.current = startingHorizAccel;
+  dy.current = startingVertAccel;
   paddleX.current = (canvas.width - paddleWidth) / 2;
   ctx.font = '30px Arial';
   ctx.fillStyle = 'red';
   ctx.textAlign = 'center';
   ctx.fillText('Game over', canvas.width / 2, canvas.height / 2);
   ctx.font = "16px Arial";
-  ctx.fillText('Press enter to restart', canvas.width / 2, canvas.height * 0.75);
+  ctx.fillText('Press R to restart', canvas.width / 2, canvas.height * 0.75);
 
-  if (enterPressed) {
-    gameOver.current = false;
+  if (controls.rKeyPressed) {
+    gameState.current = 'start';
   }
 };
 
 exports.resetGame = resetGame;
+},{"../resetBall":"client/components/Playground/resetBall.js","../constants":"client/components/Playground/constants.js"}],"client/components/Playground/processFrame/drawMenu.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.drawMenu = void 0;
+
+var _resetBall = require("../resetBall");
+
+var drawMenu = function drawMenu(gameState, controls, ctx, canvas) {
+  ctx.font = '30px Arial';
+  ctx.fillStyle = 'black';
+  ctx.textAlign = 'center';
+  ctx.fillText('This is a breakout clone.', canvas.width / 2, canvas.height / 2);
+  ctx.fillStyle = 'blue';
+  ctx.font = '16px Arial';
+  ctx.fillText('Press enter to start', canvas.width / 2, canvas.height * 0.75);
+
+  if (controls.enterPressed) {
+    gameState.current = 'inProgress';
+  }
+};
+
+exports.drawMenu = drawMenu;
 },{"../resetBall":"client/components/Playground/resetBall.js"}],"client/components/Playground/processFrame/processFrame.js":[function(require,module,exports) {
 "use strict";
 
@@ -57093,33 +57143,36 @@ var _drawBricks = require("./drawBricks");
 
 var _resetGame = require("./resetGame");
 
-var processFrame = function processFrame(gameOver, deltaTime, canvas, ctx, x, y, dx, dy, paddleX, paddleHeight, paddleWidth, enterPressed, rightPressed, leftPressed, bricks, brickColumnCount, brickRowCount, brickWidth, brickHeight, brickPadding, brickOffsetLeft, brickOffsetTop) {
+var _drawMenu = require("./drawMenu");
+
+var processFrame = function processFrame(gameState, deltaTime, canvas, ctx, x, y, dx, dy, paddleX, paddleHeight, paddleWidth, controls, bricks, brickColumnCount, brickRowCount, brickWidth, brickHeight, brickPadding, brickOffsetLeft, brickOffsetTop) {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  if (!gameOver.current) {
-    (0, _updateBall.updateBall)(gameOver, canvas, ctx, x, y, dx, dy, paddleHeight, paddleWidth, paddleX);
-    (0, _updatePaddle.updatePaddle)(canvas, ctx, paddleX, paddleHeight, paddleWidth, rightPressed, leftPressed);
-    (0, _drawBricks.drawBricks)(ctx, bricks, brickColumnCount, brickRowCount, brickWidth, brickHeight, brickPadding, brickOffsetLeft, brickOffsetTop);
-  } else {
-    (0, _resetGame.resetGame)(x, y, dx, dy, paddleX, paddleWidth, ctx, canvas, gameOver, enterPressed);
+  switch (gameState.current) {
+    case 'start':
+      (0, _drawMenu.drawMenu)(gameState, controls, ctx, canvas);
+      break;
+
+    case 'inProgress':
+      (0, _updateBall.updateBall)(gameState, canvas, ctx, x, y, dx, dy, paddleHeight, paddleWidth, paddleX);
+      (0, _updatePaddle.updatePaddle)(canvas, ctx, paddleX, paddleHeight, paddleWidth, controls);
+      (0, _drawBricks.drawBricks)(ctx, bricks, brickColumnCount, brickRowCount, brickWidth, brickHeight, brickPadding, brickOffsetLeft, brickOffsetTop);
+      break;
+
+    case 'over':
+      (0, _resetGame.resetGame)(x, y, dx, dy, paddleX, paddleWidth, ctx, canvas, gameState, controls);
+      break;
+
+    default:
+      (0, _drawMenu.drawMenu)(gameState, controls, ctx, canvas);
+      break;
   }
+
+  ;
 };
 
 exports.processFrame = processFrame;
-},{"./updateBall":"client/components/Playground/processFrame/updateBall.js","./updatePaddle":"client/components/Playground/processFrame/updatePaddle.js","./drawBricks":"client/components/Playground/processFrame/drawBricks.js","./resetGame":"client/components/Playground/processFrame/resetGame.js"}],"client/components/Playground/constants.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var playgroundConstants = {
-  canvasWidth: 480,
-  canvasHeight: 320
-};
-var _default = playgroundConstants;
-exports.default = _default;
-},{}],"client/components/Playground/Playground.js":[function(require,module,exports) {
+},{"./updateBall":"client/components/Playground/processFrame/updateBall.js","./updatePaddle":"client/components/Playground/processFrame/updatePaddle.js","./drawBricks":"client/components/Playground/processFrame/drawBricks.js","./resetGame":"client/components/Playground/processFrame/resetGame.js","./drawMenu":"client/components/Playground/processFrame/drawMenu.js"}],"client/components/Playground/Playground.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -57148,7 +57201,9 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 var canvasWidth = _constants.default.canvasWidth,
-    canvasHeight = _constants.default.canvasHeight;
+    canvasHeight = _constants.default.canvasHeight,
+    startingVertAccel = _constants.default.startingVertAccel,
+    startingHorizAccel = _constants.default.startingHorizAccel;
 var useStyles = (0, _styles.makeStyles)(function (theme) {
   return {
     link: {
@@ -57172,11 +57227,11 @@ var useCanvasOnAnimationFrame = function useCanvasOnAnimationFrame(canvasRef, ca
   // without triggering a re-render on their change
   var requestRef = (0, _react.useRef)();
   var previousTimeRef = (0, _react.useRef)();
-  var gameOver = (0, _react.useRef)(false);
+  var gameState = (0, _react.useRef)('start');
   var x = (0, _react.useRef)();
   var y = (0, _react.useRef)();
-  var dy = (0, _react.useRef)(1);
-  var dx = (0, _react.useRef)(1);
+  var dy = (0, _react.useRef)(startingVertAccel);
+  var dx = (0, _react.useRef)(startingHorizAccel);
   var paddleHeight = 10;
   var paddleWidth = 75;
   var paddleX = (0, _react.useRef)((canvasWidth - paddleWidth) / 2);
@@ -57200,12 +57255,18 @@ var useCanvasOnAnimationFrame = function useCanvasOnAnimationFrame(canvasRef, ca
     }
   }
 
-  var canvas, ctx, rightPressed, leftPressed, enterPressed;
+  var controls = {
+    rightPressed: false,
+    leftPressed: false,
+    enterPressed: false,
+    rKeyPressed: false
+  };
+  var canvas, ctx;
 
   var animateCanvas = function animateCanvas(time) {
     if (previousTimeRef.current != undefined) {
       var deltaTime = time - previousTimeRef.current;
-      callback(gameOver, deltaTime, canvas, ctx, x, y, dx, dy, paddleX, paddleHeight, paddleWidth, enterPressed, rightPressed, leftPressed, bricks, brickColumnCount, brickRowCount, brickWidth, brickHeight, brickPadding, brickOffsetLeft, brickOffsetTop);
+      callback(gameState, deltaTime, canvas, ctx, x, y, dx, dy, paddleX, paddleHeight, paddleWidth, controls, bricks, brickColumnCount, brickRowCount, brickWidth, brickHeight, brickPadding, brickOffsetLeft, brickOffsetTop);
     }
 
     previousTimeRef.current = time;
@@ -57214,23 +57275,39 @@ var useCanvasOnAnimationFrame = function useCanvasOnAnimationFrame(canvasRef, ca
 
   (0, _react.useEffect)(function () {
     var keyDownHandler = function keyDownHandler(e) {
-      if (e.key == "Right" || e.key == "ArrowRight") {
-        rightPressed = true;
-      } else if (e.key == "Left" || e.key == "ArrowLeft") {
-        leftPressed = true;
-      } else if ((e.keyCode || e.which) == 13) {
-        enterPressed = true;
+      switch (e.keyCode) {
+        case 39:
+          return controls.rightPressed = true;
+
+        case 37:
+          return controls.leftPressed = true;
+
+        case 13:
+          return controls.enterPressed = true;
+
+        case 82:
+          return controls.rKeyPressed = true;
       }
+
+      ;
     };
 
     var keyUpHandler = function keyUpHandler(e) {
-      if (e.key == "Right" || e.key == "ArrowRight") {
-        rightPressed = false;
-      } else if (e.key == "Left" || e.key == "ArrowLeft") {
-        leftPressed = false;
-      } else if ((e.keyCode || e.which) == 13) {
-        enterPressed = false;
+      switch (e.keyCode) {
+        case 39:
+          return controls.rightPressed = false;
+
+        case 37:
+          return controls.leftPressed = false;
+
+        case 13:
+          return controls.enterPressed = false;
+
+        case 82:
+          return controls.rKeyPressed = false;
       }
+
+      ;
     };
 
     document.addEventListener("keydown", keyDownHandler, false);
@@ -58938,7 +59015,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49254" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49279" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
