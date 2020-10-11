@@ -54060,159 +54060,110 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.actualGiftList = void 0;
 var actualGiftList = [{
-  name: 'LEGO Minifigures blind bag',
-  type: 'Stocking filler',
-  purchaseHref: 'https://www.lego.com/en-gb/product/series-19-71025',
-  imgSrc: 'https://i.ebayimg.com/images/g/WG8AAOSw5PRdb49l/s-l300.png',
-  price: '£2.99',
-  notes: ''
+  name: "The Legend of Zelda: Breath of the Wild",
+  type: "Game",
+  purchaseHref: "https://www.amazon.co.uk/Legend-Zelda-Breath-Nintendo-Switch/dp/B01N1083WZ/ref=asc_df_B01N1083WZ",
+  imgSrc: "https://storemedia.nintendo.com/ui/images/devices/switch/software/switch-legendofzelda-breathofthewild-640x480.png",
+  price: "£47.99",
+  notes: "Platform: Nintendo Switch"
 }, {
-  name: 'The Legend of Zelda: Breath of the Wild',
-  type: 'Game',
-  purchaseHref: 'https://www.amazon.co.uk/Legend-Zelda-Breath-Nintendo-Switch/dp/B01N1083WZ/ref=asc_df_B01N1083WZ/?tag=googshopuk-21&linkCode=df0&hvadid=310694401667&hvpos=1o1&hvnetw=g&hvrand=11210629286154802326&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9044990&hvtargid=pla-564457057881&psc=1&th=1&psc=1',
-  imgSrc: 'https://storemedia.nintendo.com/ui/images/devices/switch/software/switch-legendofzelda-breathofthewild-640x480.png',
-  price: '£47.99',
-  notes: 'Platform: Nintendo Switch'
+  name: "Arsenal 2020/21 Away Shirt",
+  type: "Sport",
+  purchaseHref: "https://arsenaldirect.arsenal.com/Football-Shirts-and-Kit/Away/Arsenal-Adult-20-21-Away-Shirt/p/MEH5815",
+  imgSrc: "https://i1.adis.ws/i/ArsenalDirect/meh5815_f?$810x810$&.jpg",
+  price: "£60.00",
+  notes: "Size: M"
 }, {
-  name: 'The Outer Worlds',
-  type: 'Game',
-  purchaseHref: 'https://www.game.co.uk/en/the-outer-worlds-2623343?cm_mmc=Google+Shopping-_-Mint+Software-_-Mint+Software-_-+-+&gclid=Cj0KCQjwgNXtBRC6ARIsAIPP7Ru8M41ahDqqJ3q4imHpcPW3Ju57aWZx6wx5jt_14ZPiqGxaixzl2u8aAvxLEALw_wcB',
-  imgSrc: 'https://images-na.ssl-images-amazon.com/images/I/81KZCh0hG5L._AC_SX215_.jpg',
-  price: '£49.99',
-  notes: 'Platform: PS4'
+  name: "DualShock 5 PS5 Controller",
+  type: "Game",
+  purchaseHref: "https://www.argos.co.uk/product/7635935",
+  imgSrc: "https://media.4rgos.it/i/Argos/7635935_R_Z001A?w=1500&h=880&qlt=70&fmt=webp",
+  price: "£59.99",
+  notes: ""
 }, {
-  name: 'Arsenal 2019/20 Home Shirt',
-  type: 'Sport',
-  purchaseHref: 'https://www.sportsdirect.com/adidas-arsenal-home-shirt-2019-2020-377220?gclid=Cj0KCQjwgNXtBRC6ARIsAIPP7RvpmEH77kUknno2JGwe-HOc-tqxuMcR4wti7Eop04o7xYFmWfTI6Q0aAuR4EALw_wcB#colcode=37722008',
-  imgSrc: 'https://cdn11.bigcommerce.com/s-6rh1yreabm/images/stencil/1280x1280/products/857/2096/arsneal_home__06911.1561975052.png?c=2&imbypass=on',
-  price: '£54.99',
-  notes: 'Size: M'
+  name: "Nintendo Switch Pro Controller - Black",
+  type: "Game",
+  purchaseHref: "https://www.amazon.co.uk/Nintendo-Switch-Pro-Controller-Black/dp/B01N4ND1T2",
+  imgSrc: "https://images-na.ssl-images-amazon.com/images/I/51%2BLtzFV5WL._AC_SL1200_.jpg",
+  price: "£54.99",
+  notes: ""
 }, {
-  name: 'Arsenal 2019/20 Away Shirt',
-  type: 'Sport',
-  purchaseHref: 'https://www.sportsdirect.com/adidas-arsenal-away-shirt-2019-2020-377233?gclid=Cj0KCQjwgNXtBRC6ARIsAIPP7RsAt13MbH3-52wl1vtRCR0s4kKqZYCa04eZeclODeQYFgNxfdJCFNYaAsavEALw_wcB#colcode=37723313',
-  imgSrc: 'https://cdn11.bigcommerce.com/s-3yufq/images/stencil/1280x1280/products/1017/2883/arsenal_away_adult_png__98732.1564477685.png?c=2&imbypass=on',
-  price: '£54.99',
-  notes: 'Size: M'
+  name: "PAC-MAN T-Shirt",
+  type: "Clothing",
+  purchaseHref: "https://www.insertcoinclothing.com/t-shirts/pac-man.html?store=pac-man",
+  imgSrc: "https://www.insertcoinclothing.com/media/images/products/scale610x1002/1085_1.jpg?c=1590747488",
+  price: "£23.99",
+  notes: "Size: M"
 }, {
-  name: 'Fine Stripe Polo Shirt',
-  type: 'Clothing',
-  purchaseHref: 'https://www.lyleandscott.com/uk/fine-stripe-polo-shirt-SP1116V572.html?dwvar_SP1116V572_color=572&cgid=mens-polo-shirts#start=43',
-  imgSrc: 'https://www.lyleandscott.com/dw/image/v2/BBKP_PRD/on/demandware.static/-/Sites-apparel-catalog/default/dw6cacd969/images/large/SP1116V_572_1.jpg?sw=600&sh=750&sm=cut',
-  price: '£55.00',
-  notes: 'Size: M - Lyle & Scott generally make good stuff, but with clothes this is more to give an idea of what I like'
+  name: "Wasteland T-Shirt (Unisex)",
+  type: "Clothing",
+  purchaseHref: "https://www.fangamer.com/collections/jak-and-daxter/products/jak-and-daxter-wasteland-shirt",
+  imgSrc: "https://cdn.shopify.com/s/files/1/0014/1962/products/product_jak_wasteland_shirt_main_1024x1024.png?v=1560208598",
+  price: "$24",
+  notes: "Size: M - only available from the US"
 }, {
-  name: 'Geo Print Polo Shirt',
-  type: 'Clothing',
-  purchaseHref: 'https://www.lyleandscott.com/uk/geo-print-polo-shirt-SP1111VZ704.html?dwvar_SP1111VZ704_color=Z704&cgid=mens-polo-shirts#sz=44&idx=42&start=72',
-  imgSrc: 'https://www.lyleandscott.com/dw/image/v2/BBKP_PRD/on/demandware.static/-/Sites-apparel-catalog/default/dw87541315/images/large/SP1111V_Z704_1.jpg?sw=1200&sh=1600&sm=fit',
-  price: '£55.00',
-  notes: 'Size: M - Lyle & Scott generally make good stuff, but with clothes this is more to give an idea of what I like'
+  name: "Yung Venuz Figurine",
+  type: "Random",
+  purchaseHref: "https://www.fangamer.com/collections/nuclear-throne/products/nuclear-throne-yung-venuz-figurine",
+  imgSrc: "https://cdn.shopify.com/s/files/1/0014/1962/products/product_nuclearthrone_figs_yv_main_1024x1024.jpg?v=1541194339",
+  price: "£7",
+  notes: "Only available from the US"
 }, {
-  name: 'Death Stranding',
-  type: 'Game',
-  purchaseHref: 'https://www.argos.co.uk/product/5722486',
-  imgSrc: 'https://media.4rgos.it/i/Argos/5722486_R_Z001A?w=750&h=440&qlt=70',
-  price: '£49.99',
-  notes: 'Platform: PS4 \nRelease Date: Nov 8th'
+  name: "CLASSIC POLO SHIRT",
+  type: "Clothing",
+  purchaseHref: "https://www.jackjones.com/gb/en/jj/clothing/t-shirts/basic-t-shirts/classic-polo-shirt-12136668.html?cgid=jj-tshirts-plain&dwvar_colorPattern=12136668_RioRed_624130",
+  imgSrc: "https://www.jackjones.com/dw/image/v2/ABBT_PRD/on/demandware.static/-/Sites-pim-catalog/default/dw93752222/pim-static/large/12136668_RioRed_624130_003_ProductLarge.jpg?sw=685",
+  price: "£22",
+  notes: "Size - M"
 }, {
-  name: 'Official DualShock 4 Charging Station for PS4 Controller',
-  type: 'Random',
-  purchaseHref: 'https://www.argos.co.uk/product/4399023',
-  imgSrc: 'https://media.4rgos.it/i/Argos/4399023_R_Z001A?w=750&h=440&qlt=70',
-  price: '£12.99',
-  notes: ''
+  name: "Apple Lightning to 3.5mm Headphone Jack Adapter",
+  type: "Random",
+  purchaseHref: "https://www.amazon.co.uk/Apple-Lightning-Headphone-Jack-Adapter/dp/B01LWAUW1P",
+  imgSrc: "https://images-na.ssl-images-amazon.com/images/I/31mmFtpMqOL._AC_SL1024_.jpg",
+  price: "£8",
+  notes: ""
 }, {
-  name: 'LEGO Brick Pencil Case',
-  type: 'Random',
-  purchaseHref: 'https://www.lego.com/en-gb/product/lego-brick-pencil-case-red-5005110',
-  imgSrc: 'https://sh-s7-live-s.legocdn.com/is/image/LEGO/5005110?wid=1500&hei=1500&fit=constrain,1&op_sharpen=0&resMode=sharp2&op_usm=1,1,6,0&iccEmbed=0&printRes=72',
-  price: '£9.99',
-  notes: ''
+  name: "Tri Pixel Pocket - T - Shirt",
+  type: "Clothing",
+  purchaseHref: "https://gametee.co.uk/collections/t-shirts/products/tri-pixel-pocket-tee",
+  imgSrc: "https://cdn.shopify.com/s/files/1/2688/0142/products/tri-pixel-pocket-t-shirt-277243.jpg?v=1599680593",
+  price: "£19.99",
+  notes: "Size - M"
 }, {
-  name: 'The Manor | Sat 21 Mar 2020 @ 7:00 pm | O2 Academy Brixton, London',
-  type: 'Random',
-  purchaseHref: 'https://www.ticketmaster.co.uk/the-manor-london-21-03-2020/event/1F00573EBC9E671B',
-  imgSrc: 'https://c.ststat.net/content/EntImg/Tour/the-manor-1654368446-300x300.jpg',
-  price: '£29.65 each',
-  notes: 'CIRCLE UNRESERVED SEATS / REAR STANDING only - I think it might be too lairy in the stalls for this one.\nProbably not worth it if there\'s just one ticket, not sure who to bring atm though.'
+  name: "Brave Soul Mens Polo Shirt Cotton Short Sleeved (Black)",
+  type: "Clothing",
+  purchaseHref: "https://www.amazon.co.uk/Brave-Soul-Glover-Sleeve-Casual/dp/B01N6J8GRL/ref=sr_1_11?dchild=1&keywords=Polo%2BShirts%2Bpatterned&qid=1602403288&sr=8-11&th=1&psc=1",
+  imgSrc: "https://images-na.ssl-images-amazon.com/images/I/61UwpN-9uFL._AC_SY879._SX._UX._SY._UY_.jpg",
+  price: "£13.95",
+  notes: "Size - M"
 }, {
-  name: 'amiibo Chrom',
-  type: 'Random',
-  purchaseHref: 'https://www.amazon.co.uk/Nintendo-10002198-amiibo-Chrom-Switch/dp/B07TD3X2GK?pf_rd_p=61f6fb90-34b3-4002-b602-117985d72603&pd_rd_wg=Qobbo&pf_rd_r=JKJKYE24G1BDANNCYM9Q&ref_=pd_gw_newr&pd_rd_w=qkPEk&pd_rd_r=e47b5392-8146-4946-8b8e-f4d81834b33f',
-  imgSrc: 'https://i.ebayimg.com/images/g/u9UAAOSwijhdEYqp/s-l400.jpg',
-  price: '£14.99',
-  notes: 'Release Date: Nov 15th'
+  name: "Brave Soul 'Croston' Mens Polo T-Shirt with Paisley Trim Collar (Rich Navy)",
+  type: "Clothing",
+  purchaseHref: "https://www.amazon.co.uk/Brave-Soul-Croston-T-Shirt-Paisley/dp/B07NGN1TFK/ref=sr_1_27?dchild=1&keywords=BRAVE%2BSOUL&qid=1602403997&rnid=1642204031&s=clothing&sr=1-27&th=1",
+  imgSrc: "https://images-na.ssl-images-amazon.com/images/I/61I%2Bc5N6tGL._AC_UY879_.jpg",
+  price: "£12.99",
+  notes: "Size - M - I don't actually want black everything, not sure how that's happened, I like colours"
 }, {
-  name: 'SACKBOY pattern t-shirt',
-  type: 'Clothing',
-  purchaseHref: 'https://www.insertcoinclothing.com/tees/sackboy-pattern.html?store=littlebigplanet',
-  imgSrc: 'https://www.insertcoinclothing.com/media/images/products/scale610x1002/924_1.jpg?c=1554459092',
-  price: '£22.99',
-  notes: 'Size: M'
+  name: "Crash Running T-shirt - BRICKTOWN x CRASH BANDICOOT ™",
+  type: "Clothing",
+  purchaseHref: "https://www.bricktownworld.com/collections/bricktown-x-crash-bandicoot/products/crash-t-shirt-bricktown-x-crash-bandicoot?variant=32112075571302",
+  imgSrc: "https://cdn.shopify.com/s/files/1/1042/9012/products/t-shirtblacksmallcrashrunning_1024x1024.jpg?v=1601439286",
+  price: "69.99EUR",
+  notes: "Size - M - I have no idea why this is so bloody expensive, but this sort of more subtle detail is perfic"
 }, {
-  name: 'WipEout Ship Manufacturers Graphic T-Shirt',
-  type: 'Clothing',
-  purchaseHref: 'https://www.redbubble.com/people/ioncannon/works/28213627-wipeout-ship-manufacturers?p=mens-graphic-t-shirt&rbs=716577e9-eb31-4f08-accd-1e7f2d01e427&ref=available_products_swiper',
-  imgSrc: 'https://ih1.redbubble.net/image.435451264.3627/gpt,mens,750x1000,black,large-pad,750x1000,f8f8f8.jpg',
-  price: '£22.33',
-  notes: 'Size: M - only interested in the graphic t-shirt design'
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
 }, {
-  name: 'Ideas Dinosaur Fossils',
-  type: 'LEGO',
-  purchaseHref: 'https://www.lego.com/en-gb/product/dinosaur-fossils-21320?icmp=HP-SHCC-EX-ID-projec-1181',
-  imgSrc: 'https://sh-s7-live-s.legocdn.com/is/image/LEGO/21320?wid=1500&hei=1500&fit=constrain,1&op_sharpen=0&resMode=sharp2&op_usm=1,1,6,0&iccEmbed=0&printRes=72',
-  price: '£54.99',
-  notes: ''
-}, {
-  name: 'ALL-OVER PRINT POLO SHIRT (Fudge)',
-  type: 'Clothing',
-  purchaseHref: 'https://www.jackjones.com/gb/en/jj/clothing/t-shirts/polo-shirts/all-over-print-polo-shirt-12154548.html?cgid=jj-tshirts-polo&dwvar_colorPattern=12154548_Fudge_689664',
-  imgSrc: 'https://www.jackjones.com/dw/image/v2/ABBT_PRD/on/demandware.static/-/Sites-pim-catalog/default/dw82355fc7/pim-static/large/12154548_Fudge_689664_008_ProductLarge.jpg?sw=685',
-  price: '£15.40',
-  notes: 'Size: M'
-}, {
-  name: 'Lindor Milk & White Truffles',
-  type: 'Chocolate',
-  purchaseHref: 'https://www.lindt.co.uk/shop/our-brands/lindor/lindor-milk-white-truffles-200g',
-  imgSrc: 'https://www.lindt.co.uk/shop/media/catalog/product/cache/1/thumbnail/405x400/9df78eab33525d08d6e5fb8d27136e95/8/0/8003340095899_t1.png',
-  price: '£4.99 (for this size)',
-  notes: 'Not really the normal sort of gift, just saying these are amazing'
-}, {
-  name: '',
-  type: '',
-  purchaseHref: '',
-  imgSrc: '',
-  price: '',
-  notes: ''
-}, {
-  name: '',
-  type: '',
-  purchaseHref: '',
-  imgSrc: '',
-  price: '',
-  notes: ''
-}, {
-  name: '',
-  type: '',
-  purchaseHref: '',
-  imgSrc: '',
-  price: '',
-  notes: ''
-}, {
-  name: '',
-  type: '',
-  purchaseHref: '',
-  imgSrc: '',
-  price: '',
-  notes: ''
-}, {
-  name: '',
-  type: '',
-  purchaseHref: '',
-  imgSrc: '',
-  price: '',
-  notes: ''
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
 }];
 exports.actualGiftList = actualGiftList;
 },{}],"client/components/GiftList/GiftList.js":[function(require,module,exports) {
@@ -54248,7 +54199,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var useStyles = (0, _styles.makeStyles)(function (theme) {
   return {
     link: {
-      color: 'inherit'
+      color: "inherit"
     },
     icon: {
       marginRight: theme.spacing(2)
@@ -54258,12 +54209,12 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
       paddingBottom: theme.spacing(8)
     },
     card: {
-      height: '100%',
-      display: 'flex',
-      flexDirection: 'column'
+      height: "100%",
+      display: "flex",
+      flexDirection: "column"
     },
     cardMedia: {
-      paddingTop: '56.25%' // 16:9
+      paddingTop: "112.5%" // 16:9
 
     },
     cardContent: {
@@ -54282,7 +54233,7 @@ var GiftList = function GiftList() {
     container: true,
     spacing: 4
   }, _actualGiftList.actualGiftList.map(function (gift, index) {
-    if (gift.name !== '') {
+    if (gift.name !== "") {
       return _react.default.createElement(_Grid.default, {
         item: true,
         key: index,
@@ -59015,7 +58966,7 @@ var DJHunnHomepage = function DJHunnHomepage() {
     path: "/"
   }, _react.default.createElement(_Home.default, null)), _react.default.createElement(_reactRouterDom.Route, {
     exact: true,
-    path: "/bday-xmas-2019"
+    path: "/bday-xmas"
   }, _react.default.createElement(_GiftList.default, null)), _react.default.createElement(_reactRouterDom.Route, {
     exact: true,
     path: "/playground"
@@ -59070,7 +59021,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53128" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51343" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
