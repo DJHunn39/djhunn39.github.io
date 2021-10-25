@@ -54058,6 +54058,27 @@ var actualGiftList = [{
   price: "£26",
   notes: ""
 }, {
+  name: "Slip-on Where's Wally Trainers",
+  type: "Clothing",
+  purchaseHref: "https://www.schuh.co.uk/mens/vans-classic-slip-on-wheres-waldo-multi-trainers/3421199970/",
+  imgSrc: "https://d2ob0iztsaxy5v.cloudfront.net/product/342119/3421199970m4_zm.jpg",
+  price: "£35",
+  notes: ""
+}, {
+  name: "Shifty Eyed Spies",
+  type: "Gaming",
+  purchaseHref: "https://www.amazon.co.uk/Big-Creative-WW1003-Shifty-Colours/dp/B076FCXN3P",
+  imgSrc: "https://m.media-amazon.com/images/I/81rslHCY02L._AC_SL1500_.jpg",
+  price: "??",
+  notes: "Hard to find 😭"
+}, {
+  name: "Monikers",
+  type: "Gaming",
+  purchaseHref: "https://www.amazon.co.uk/Monikers/dp/B00M07OQ1U?tag=dicebreak-m-21",
+  imgSrc: "https://m.media-amazon.com/images/I/71A5OGgM3YL._AC_SL1500_.jpg",
+  price: "£29.39",
+  notes: ""
+}, {
   name: "Space Dye Polo Shirt - Slate Blue",
   type: "Clothing",
   purchaseHref: "https://www.lyleandscott.com/space-dye-polo-shirt-slate-blue/13334361.html",
@@ -59355,7 +59376,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56220" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57049" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
