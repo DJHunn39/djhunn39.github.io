@@ -56100,6 +56100,244 @@ var actualGiftList = [{
   price: "69.99EUR",
   notes: "Size - M - I have no idea why this is so bloody expensive, but this sort of more subtle detail is great"
 }, {
+  name: "Lindt LINDOR Milk Chocolate Lovers Christmas Selection Gift Box",
+  type: "Other",
+  purchaseHref: "https://www.amazon.co.uk/dp/B08FS8QRSW/ref=cm_gf_aAM_i8_d_p0_e0_qd4_7bU9hoKABFxcCjKXR0bv",
+  imgSrc: "https://m.media-amazon.com/images/I/81YxwwQ82bL._AC_SL1500_.jpg",
+  price: "£12",
+  notes: "Any Lindor really, you can never go wrong with Lindor"
+}, {
+  name: "Arsenal Red Crew Neck Jumper",
+  type: "Clothing",
+  purchaseHref: "https://arsenaldirect.arsenal.com/Mens/Clothing/Knitwear/Arsenal-Red-Crew-Neck-Cotton-Jumper/p/N01597",
+  imgSrc: "https://i1.adis.ws/i/ArsenalDirect/n01597_f?$810x810$&.jpg",
+  price: "£30",
+  notes: "Size M"
+}, {
+  name: "Great Diaries: The world's most remarkable diaries, journals, notebooks, and letters",
+  type: "Books",
+  purchaseHref: "https://www.amazon.co.uk/dp/0241412943/ref=cm_gf_aAM_i10_d_p0_e0_qd1_JcZanIgekNR28gMTwBur",
+  imgSrc: "https://images-na.ssl-images-amazon.com/images/I/510uTlkiRCL._SX418_BO1,204,203,200_.jpg",
+  price: "£13.76",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
   name: "",
   type: "",
   purchaseHref: "",
@@ -56285,6 +56523,50 @@ var themeList = [{
   notes: ""
 }];
 exports.themeList = themeList;
+},{}],"client/components/GiftList/dreamList.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.dreamList = void 0;
+var dreamList = [{
+  name: "iPad Air 256GB",
+  type: "Tech",
+  purchaseHref: "https://www.apple.com/uk/shop/buy-ipad/ipad-air",
+  imgSrc: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-air-select-wifi-spacegray-202009?wid=940&hei=1112&fmt=png-alpha&.v=1598650646000",
+  price: "£729/£859",
+  notes: "Space grey (cellular would be cool but not needed)"
+}, {
+  name: "LEGO Big Ben (Creator Expert set 10253)",
+  type: "Other",
+  purchaseHref: "https://www.ebay.co.uk/p/4037434044?iid=255185442504",
+  imgSrc: "https://www.lego.com/cdn/cs/set/assets/blt72260d09378dfbbc/10253.jpg?fit=bounds&format=jpg&quality=80&width=1600&height=1600&dpr=1.5",
+  price: "~£300",
+  notes: "Retired, so I can't get it with discount."
+}, {
+  name: "Eurovision Song Contest TIckets (and possibly hotel/travel)",
+  type: "Other",
+  purchaseHref: "https://eurovisionworld.com/eurovision/2022/tickets",
+  imgSrc: "https://eurovisionary.com/wp-content/uploads/2015/12/esc_generic_black-white-bg.png",
+  price: "",
+  notes: "These usually come out at the end of the year. The link goes to a site with good info for 2022."
+}, {
+  name: "iRobot Roomba i3+",
+  type: "Tech",
+  purchaseHref: "https://shop.irobot.co.uk/irobot-roomba-i3/i355840.html?cgid=uk&lang=en_GB",
+  imgSrc: "https://i1.adis.ws/i/irobot/i355840_1?w=2000&img404=404&v=1",
+  price: "£559.99",
+  notes: "Or the S9+ but that is silly money"
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}];
+exports.dreamList = dreamList;
 },{}],"client/components/GiftList/GiftList.js":[function(require,module,exports) {
 "use strict";
 
@@ -56320,6 +56602,8 @@ var _styles = require("@material-ui/core/styles");
 var _actualGiftList = require("./actualGiftList");
 
 var _themeList = require("./themeList");
+
+var _dreamList = require("./dreamList");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -56384,6 +56668,20 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
 });
 var THINGS = "things";
 var THEMES = "themes";
+var DREAMS = "dreams";
+
+var getCurrentList = function getCurrentList(section) {
+  switch (section) {
+    case THINGS:
+      return _actualGiftList.actualGiftList;
+
+    case THEMES:
+      return _themeList.themeList;
+
+    case DREAMS:
+      return _dreamList.dreamList;
+  }
+};
 
 var GiftList = function GiftList() {
   var _useState = (0, _react.useState)(THINGS),
@@ -56391,7 +56689,7 @@ var GiftList = function GiftList() {
       section = _useState2[0],
       setSection = _useState2[1];
 
-  var list = section === THINGS ? _actualGiftList.actualGiftList : _themeList.themeList;
+  var list = getCurrentList(section);
   var theme = (0, _styles.useTheme)();
   var classes = useStyles(theme);
   return _react.default.createElement("main", null, _react.default.createElement(_Container.default, {
@@ -56413,7 +56711,13 @@ var GiftList = function GiftList() {
     onClick: function onClick() {
       return setSection(THEMES);
     }
-  }, "Themes"))), _react.default.createElement(_Grid.default, {
+  }, "Themes"), _react.default.createElement(_Button.default, {
+    className: section === DREAMS ? classes.activeButton : classes.restButton,
+    variant: "outlined",
+    onClick: function onClick() {
+      return setSection(DREAMS);
+    }
+  }, "Dreams"))), _react.default.createElement(_Grid.default, {
     container: true,
     spacing: 4
   }, list.map(function (gift, index) {
@@ -56454,7 +56758,7 @@ var GiftList = function GiftList() {
 
 var _default = GiftList;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","@material-ui/core/Box":"../node_modules/@material-ui/core/esm/Box/index.js","@material-ui/core/Button":"../node_modules/@material-ui/core/esm/Button/index.js","@material-ui/core/ButtonGroup":"../node_modules/@material-ui/core/esm/ButtonGroup/index.js","@material-ui/core/Card":"../node_modules/@material-ui/core/esm/Card/index.js","@material-ui/core/CardContent":"../node_modules/@material-ui/core/esm/CardContent/index.js","@material-ui/core/CardMedia":"../node_modules/@material-ui/core/esm/CardMedia/index.js","@material-ui/core/Container":"../node_modules/@material-ui/core/esm/Container/index.js","@material-ui/core/Grid":"../node_modules/@material-ui/core/esm/Grid/index.js","@material-ui/core/Link":"../node_modules/@material-ui/core/esm/Link/index.js","@material-ui/core/Typography":"../node_modules/@material-ui/core/esm/Typography/index.js","@material-ui/core/styles":"../node_modules/@material-ui/core/esm/styles/index.js","./actualGiftList":"client/components/GiftList/actualGiftList.js","./themeList":"client/components/GiftList/themeList.js"}],"../node_modules/@material-ui/core/esm/utils/scrollLeft.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","@material-ui/core/Box":"../node_modules/@material-ui/core/esm/Box/index.js","@material-ui/core/Button":"../node_modules/@material-ui/core/esm/Button/index.js","@material-ui/core/ButtonGroup":"../node_modules/@material-ui/core/esm/ButtonGroup/index.js","@material-ui/core/Card":"../node_modules/@material-ui/core/esm/Card/index.js","@material-ui/core/CardContent":"../node_modules/@material-ui/core/esm/CardContent/index.js","@material-ui/core/CardMedia":"../node_modules/@material-ui/core/esm/CardMedia/index.js","@material-ui/core/Container":"../node_modules/@material-ui/core/esm/Container/index.js","@material-ui/core/Grid":"../node_modules/@material-ui/core/esm/Grid/index.js","@material-ui/core/Link":"../node_modules/@material-ui/core/esm/Link/index.js","@material-ui/core/Typography":"../node_modules/@material-ui/core/esm/Typography/index.js","@material-ui/core/styles":"../node_modules/@material-ui/core/esm/styles/index.js","./actualGiftList":"client/components/GiftList/actualGiftList.js","./themeList":"client/components/GiftList/themeList.js","./dreamList":"client/components/GiftList/dreamList.js"}],"../node_modules/@material-ui/core/esm/utils/scrollLeft.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -60451,7 +60755,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60230" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51209" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
