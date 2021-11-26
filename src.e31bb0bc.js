@@ -53036,10 +53036,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Home = function Home() {
   return _react.default.createElement("main", null, _react.default.createElement(_Container.default, {
     maxWidth: "md"
-  }, _react.default.createElement("p", null, "I'm gonna put something here, I promise. For now, here is my face."), _react.default.createElement("img", {
+  }, _react.default.createElement("h1", null, " Hi, I'm Danny."), _react.default.createElement("p", null, "I'm a full-stack Javascript developer with experience in all sorts of technologies, methodologies, and some other '-ogies' that I can't think of right now. Here's my face:"), _react.default.createElement("img", {
     src: _meLookingOk.default,
     height: 100
-  }), _react.default.createElement("p", null, "That was taken at a Marc Rebillet gig. He's an absolute beast, so I highly recommend googling him.")));
+  }), _react.default.createElement("p", null, "There's not a lot to see on here right now (unless you know just where to look), but I'll update it as time goes by.")));
 };
 
 var _default = Home;
@@ -56558,6 +56558,223 @@ var dreamList = [{
   imgSrc: "https://i1.adis.ws/i/irobot/i355840_1?w=2000&img404=404&v=1",
   price: "£559.99",
   notes: "Or the S9+ but that is silly money"
+}, {
+  name: "KODAK Luma 150 Pocket Projector",
+  type: "Tech",
+  purchaseHref: "https://www.argos.co.uk/product/9225738",
+  imgSrc: "https://media.4rgos.it/i/Argos/9225738_R_Z001A?w=1500&h=880&qlt=70&fmt=webp",
+  price: "£270",
+  notes: ""
+}, {
+  name: "Wheathills Memory Box",
+  type: "Other",
+  purchaseHref: "https://www.wheathills.com/products-and-services/memory-box/achievements-0",
+  imgSrc: "https://www.wheathills.com/uploads/files/closer-look/Image_7624-BALEN-Web-Vaneer-(1)-resized.jpg",
+  price: "??",
+  notes: "Would require some figuring out, probably working with them"
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
+}, {
+  name: "",
+  type: "",
+  purchaseHref: "",
+  imgSrc: "",
+  price: "",
+  notes: ""
 }, {
   name: "",
   type: "",
@@ -60755,7 +60972,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51209" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59235" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
