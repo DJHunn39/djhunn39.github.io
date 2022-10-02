@@ -55960,20 +55960,6 @@ var actualGiftList = [{
   price: "£26",
   notes: ""
 }, {
-  name: "Slip-on Where's Wally Trainers",
-  type: "Clothing",
-  purchaseHref: "https://www.schuh.co.uk/mens/vans-classic-slip-on-wheres-waldo-multi-trainers/3421199970/",
-  imgSrc: "https://d2ob0iztsaxy5v.cloudfront.net/product/342119/3421199970m4_zm.jpg",
-  price: "£35",
-  notes: "Size 9"
-}, {
-  name: "Shifty Eyed Spies",
-  type: "Gaming",
-  purchaseHref: "https://www.amazon.co.uk/Big-Creative-WW1003-Shifty-Colours/dp/B076FCXN3P",
-  imgSrc: "https://m.media-amazon.com/images/I/81rslHCY02L._AC_SL1500_.jpg",
-  price: "??",
-  notes: "Hard to find 😭"
-}, {
   name: "Monikers",
   type: "Gaming",
   purchaseHref: "https://www.amazon.co.uk/Monikers/dp/B00M07OQ1U?tag=dicebreak-m-21",
@@ -55995,13 +55981,6 @@ var actualGiftList = [{
   price: "£60",
   notes: "Size - M"
 }, {
-  name: "Metroid Dread",
-  type: "Gaming",
-  purchaseHref: "https://www.amazon.co.uk/Nintendo-10007233-Metroid-Dread-Switch/dp/B097C51H38/ref=sr_1_2?dchild=1&keywords=metroid+dread&qid=1635107099&qsid=258-0635596-9029208&s=videogames&sr=1-2&sres=B09B1K5LS6%2CB097C51H38%2CB097C44XPT%2CB09GBXN4V1%2CB097BP5DLQ%2CB097F76RF5%2CB097B736LC%2CB097B15RT8%2CB09HXQYGFJ%2CB09HSLYG36%2CB09HQ3FJDQ%2CB09GBYVWPD%2CB09BBK53PX%2CB09HSLCRJN%2CB09BBLBX7G%2CB097B1149G",
-  imgSrc: "https://m.media-amazon.com/images/I/71JvN8bBfiL._AC_SL1500_.jpg",
-  price: "£44.50",
-  notes: ""
-}, {
   name: "Ravensburger Disney Villainous: Despicable Plots",
   type: "Gaming",
   purchaseHref: "https://www.amazon.co.uk/Ravensburger-Disney-Villainous/dp/B08YL3TL81",
@@ -56009,33 +55988,12 @@ var actualGiftList = [{
   price: "£25.77",
   notes: "I already have all of the other expansions - not keen on the Marvel ones"
 }, {
-  name: "Flying Low",
-  type: "Clothing",
-  purchaseHref: "https://www.kaft.com/en/store/flying_low-tshirt/1286",
-  imgSrc: "https://www.kaft.com/static/images/tee2/1286_1.jpg",
-  price: "£24",
-  notes: "Size M - basically everything from Kaft is awesome, I don't own any of it"
-}, {
   name: "Ruga - Turquois",
   type: "Clothing",
   purchaseHref: "https://www.kaft.com/en/store/ruga_turquois-sweatshirt/1441",
   imgSrc: "https://www.kaft.com/static/images/sweatshirt2/1441_1.jpg",
   price: "£35",
-  notes: "Size M - basically everything from Kaft is awesome, I don't own any of it"
-}, {
-  name: "Vanimu",
-  type: "Clothing",
-  purchaseHref: "https://www.kaft.com/en/store/vanimu-tshirt/1458",
-  imgSrc: "https://www.kaft.com/static/images/tee2/1458_1.jpg",
-  price: "£24",
-  notes: "Size M - basically everything from Kaft is awesome, I don't own any of it"
-}, {
-  name: "Woolgather",
-  type: "Clothing",
-  purchaseHref: "https://www.kaft.com/en/store/woolgather-tshirt/1476",
-  imgSrc: "https://www.kaft.com/static/images/tee2/1476_1.jpg",
-  price: "£24",
-  notes: "Size M - basically everything from Kaft is awesome, I don't own any of it"
+  notes: "Size M - basically everything from Kaft is awesome"
 }, {
   name: "Earth Sweatshirt",
   type: "Clothing",
@@ -56044,26 +56002,12 @@ var actualGiftList = [{
   price: "€39.90",
   notes: "Size M"
 }, {
-  name: "Akro-Mils 10124 Plastic Parts Storage Hardware and Craft Cabinet",
-  type: "Random",
-  purchaseHref: "https://www.amazon.co.uk/Akro-Mils-10124-Plastic-Hardware-6-5-Inch/dp/B003TV3NL0/ref=pb_allspark_dp_sims_pao_desktop_session_based_2/258-0635596-9029208?pd_rd_w=qZ2Xb&pf_rd_p=c21c9a5b-a275-419b-ad32-fe74b12c3063&pf_rd_r=5N66HXH738TKJ77P6H68&pd_rd_r=fd553300-e33a-4066-a34a-0f3715876407&pd_rd_wg=VzKEu&pd_rd_i=B003TV3NL0&psc=1",
-  imgSrc: "https://m.media-amazon.com/images/I/61vFYN1QysL._AC_SL1200_.jpg",
-  price: "£60.05",
-  notes: "Or similar, this is for storing loose LEGO"
-}, {
   name: "The Legend of Zelda: Breath of the Wild",
   type: "Game",
   purchaseHref: "https://www.amazon.co.uk/Legend-Zelda-Breath-Nintendo-Switch/dp/B01N1083WZ/ref=asc_df_B01N1083WZ",
   imgSrc: "https://storemedia.nintendo.com/ui/images/devices/switch/software/switch-legendofzelda-breathofthewild-640x480.png",
   price: "£47.99",
   notes: "Platform: Nintendo Switch"
-}, {
-  name: "Nintendo Switch Pro Controller - Black",
-  type: "Game",
-  purchaseHref: "https://www.amazon.co.uk/Nintendo-Switch-Pro-Controller-Black/dp/B01N4ND1T2",
-  imgSrc: "https://images-na.ssl-images-amazon.com/images/I/51%2BLtzFV5WL._AC_SL1200_.jpg",
-  price: "£54.99",
-  notes: ""
 }, {
   name: "Wasteland T-Shirt (Unisex)",
   type: "Clothing",
@@ -56113,13 +56057,6 @@ var actualGiftList = [{
   imgSrc: "https://i1.adis.ws/i/ArsenalDirect/n01597_f?$810x810$&.jpg",
   price: "£30",
   notes: "Size M"
-}, {
-  name: "Great Diaries: The world's most remarkable diaries, journals, notebooks, and letters",
-  type: "Books",
-  purchaseHref: "https://www.amazon.co.uk/dp/0241412943/ref=cm_gf_aAM_i10_d_p0_e0_qd1_JcZanIgekNR28gMTwBur",
-  imgSrc: "https://images-na.ssl-images-amazon.com/images/I/510uTlkiRCL._SX418_BO1,204,203,200_.jpg",
-  price: "£13.76",
-  notes: ""
 }, {
   name: "",
   type: "",
@@ -60972,7 +60909,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59235" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58844" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
